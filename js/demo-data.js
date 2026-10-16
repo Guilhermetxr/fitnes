@@ -50,12 +50,12 @@ function peca(tipo, cor, detalhe = "") {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
     <defs>
       <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#ecece7"/><stop offset="1" stop-color="#dadbd3"/>
+        <stop offset="0" stop-color="#f1eee7"/><stop offset="1" stop-color="#e2ddd1"/>
       </linearGradient>
       <clipPath id="peca"><path d="${f.d}"/></clipPath>
     </defs>
     <rect width="400" height="500" fill="url(#bg)"/>
-    <circle cx="200" cy="470" r="150" fill="#c8f031" opacity=".22"/>
+    <circle cx="200" cy="470" r="150" fill="#f5b324" opacity=".22"/>
     <path d="${f.d}" fill="${cor}" fill-rule="evenodd" stroke="#00000018" stroke-width="2" stroke-linejoin="round"/>
     ${faixa}
     <path d="${f.linhas}" stroke="#ffffff55" stroke-width="3" fill="none"/>
@@ -72,8 +72,8 @@ export const CATEGORIAS_DEMO = [
   { id: "bermudas", nome: "Bermudas", slug: "bermudas", linha: "masculino", ordem: 6, ativa: true },
 ];
 
-/* paleta da marca: preto, grafite, volt, azul elétrico, coral, lilás, verde, areia */
-const PRETO = "#1b1c1e", GRAFITE = "#4a4d52", VOLT = "#c8f031", AZUL = "#2b50ff",
+/* paleta da marca: preto, grafite, dourado, azul elétrico, coral, lilás, verde, areia */
+const PRETO = "#1b1c1e", GRAFITE = "#4a4d52", OURO = "#f5b324", AZUL = "#2b50ff",
   CORAL = "#ff5a3c", LILAS = "#9b8cf0", VERDE = "#2f6b4f", AREIA = "#cbbfa8";
 const PX = ["PP", "P", "M", "G", "GG"];
 const MASC = ["P", "M", "G", "GG", "XG"];
@@ -90,14 +90,14 @@ const p = (o) => ({ id: "demo" + ++n, ordem: n, criadoEm: Date.now() - n * 6e5, 
 
 export const PRODUTOS_DEMO = [
   p({ nome: "Legging Cós Alto Preta", categoria: "leggings", preco: 119.9, precoAntigo: 159.9, selo: "maisvendido", thumb: peca("legging", PRETO) }),
-  p({ nome: "Legging Faixa Lateral Volt", categoria: "leggings", preco: 129.9, precoAntigo: 0, selo: "novidade", thumb: peca("legging", GRAFITE, VOLT) }),
+  p({ nome: "Legging Faixa Lateral Dourada", categoria: "leggings", preco: 129.9, precoAntigo: 0, selo: "novidade", thumb: peca("legging", GRAFITE, OURO) }),
   p({ nome: "Legging Seamless Lilás", categoria: "leggings", preco: 139.9, precoAntigo: 0, thumb: peca("legging", LILAS) }),
   p({ nome: "Legging Compressão Verde", categoria: "leggings", preco: 109.9, precoAntigo: 149.9, thumb: peca("legging", VERDE) }),
 
   p({ nome: "Top Alça Dupla Preto", categoria: "tops", preco: 69.9, precoAntigo: 0, selo: "maisvendido", thumb: peca("top", PRETO) }),
   p({ nome: "Top Nadador Coral", categoria: "tops", preco: 64.9, precoAntigo: 89.9, thumb: peca("top", CORAL) }),
   p({ nome: "Top Alta Sustentação Azul", categoria: "tops", preco: 79.9, precoAntigo: 0, selo: "novidade", thumb: peca("top", AZUL) }),
-  p({ nome: "Top Faixa Volt", categoria: "tops", preco: 59.9, precoAntigo: 79.9, selo: "ultimas", tamanhos: ["P", "M"], thumb: peca("top", GRAFITE, VOLT) }),
+  p({ nome: "Top Faixa Dourada", categoria: "tops", preco: 59.9, precoAntigo: 79.9, selo: "ultimas", tamanhos: ["P", "M"], thumb: peca("top", GRAFITE, OURO) }),
 
   p({ nome: "Conjunto Top + Legging Preto", categoria: "conjuntos", preco: 179.9, precoAntigo: 239.9, selo: "maisvendido", thumb: peca("conjunto", PRETO) }),
   p({ nome: "Conjunto Seamless Lilás", categoria: "conjuntos", preco: 199.9, precoAntigo: 0, selo: "novidade", thumb: peca("conjunto", LILAS) }),
@@ -105,11 +105,11 @@ export const PRODUTOS_DEMO = [
 
   p({ nome: "Short Biker Preto", categoria: "shorts", preco: 69.9, precoAntigo: 0, thumb: peca("short", PRETO) }),
   p({ nome: "Short Compressão Azul", categoria: "shorts", preco: 74.9, precoAntigo: 99.9, thumb: peca("short", AZUL) }),
-  p({ nome: "Short Faixa Volt", categoria: "shorts", preco: 79.9, precoAntigo: 0, selo: "novidade", thumb: peca("short", GRAFITE, VOLT) }),
+  p({ nome: "Short Faixa Dourada", categoria: "shorts", preco: 79.9, precoAntigo: 0, selo: "novidade", thumb: peca("short", GRAFITE, OURO) }),
 
   p({ nome: "Camiseta Dry Fit Preta", categoria: "camisetas", preco: 79.9, precoAntigo: 0, selo: "maisvendido", tamanhos: MASC, thumb: peca("camiseta", PRETO) }),
   p({ nome: "Camiseta Dry Fit Azul", categoria: "camisetas", preco: 79.9, precoAntigo: 99.9, tamanhos: MASC, thumb: peca("camiseta", AZUL) }),
-  p({ nome: "Regata Cavada Grafite", categoria: "camisetas", preco: 59.9, precoAntigo: 0, tamanhos: MASC, thumb: peca("regata", GRAFITE, VOLT) }),
+  p({ nome: "Regata Cavada Grafite", categoria: "camisetas", preco: 59.9, precoAntigo: 0, tamanhos: MASC, thumb: peca("regata", GRAFITE, OURO) }),
   p({ nome: "Regata Treino Verde", categoria: "camisetas", preco: 54.9, precoAntigo: 69.9, selo: "ultimas", tamanhos: ["M", "G"], thumb: peca("regata", VERDE) }),
 
   p({ nome: "Bermuda Treino Preta", categoria: "bermudas", preco: 89.9, precoAntigo: 0, tamanhos: MASC, thumb: peca("bermuda", PRETO) }),

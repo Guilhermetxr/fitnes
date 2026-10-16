@@ -27,25 +27,26 @@ export const FIREBASE_VERSION = "11.0.2";
 
 /* Senha usada apenas no MODO DEMONSTRAÇÃO (sem Firebase configurado).
    Com o Firebase ativo, o login passa a ser o de verdade (e-mail + senha). */
-export const DEMO_SENHA = "vibefit123";
+export const DEMO_SENHA = "ilha123";
 
 /* Valores usados quando ainda não há nada salvo em "config/loja". */
 export const CONFIG_PADRAO = {
-  nome: "Vibe Fit",
-  slogan: "Treine com estilo",
+  nome: "Ilha Imports",
+  slogan: "A Ilha Imports é sua, é única!",
   whatsapp: "5500000000000", // formato: 55 + DDD + número (só dígitos) — trocar pelo WhatsApp real
-  mensagemPadrao: "Olá! Vi o catálogo da Vibe Fit e queria saber mais sobre:",
-  instagram: "https://instagram.com/vibefit",
+  mensagemPadrao: "Olá! Vi o catálogo da Ilha Imports e queria saber mais sobre:",
+  instagram: "https://www.instagram.com/ilhaimports8",
   avisos: [
-    "MODA FITNESS · FEMININO · MASCULINO",
-    "TECIDO QUE NÃO MARCA E NÃO FICA TRANSPARENTE",
+    "ENTREGA EM ATÉ 1H EM SÃO LUÍS",
+    "AS MELHORES MARCAS AQUI",
+    "LJ 06, NEW CENTER – MARANHÃO NOVO",
     "PEÇA PELO WHATSAPP",
   ],
-  heroTitulo: "Feito pra quem não para",
+  heroTitulo: "Moda fitness de marca",
   heroTexto:
-    "Leggings, tops, shorts e conjuntos que aguentam o treino e ficam bonitos fora dele. Escolha a peça e fale com a gente no WhatsApp.",
+    "Leggings, tops, conjuntos e roupas de treino pra elas e pra eles. Escolha a peça, chame no WhatsApp e receba em até 1h em São Luís.",
   rodapeTexto:
-    "Moda fitness feminina e masculina. Preços e disponibilidade sujeitos a alteração — confirme no WhatsApp antes de fechar o pedido.",
+    "Ilha Imports — Lj 06, New Center, Maranhão Novo, São Luís/MA. Preços e disponibilidade sujeitos a alteração — confirme no WhatsApp antes de fechar o pedido.",
 };
 
 /* Quantos produtos aparecem por vez. A ideia é nunca despejar o

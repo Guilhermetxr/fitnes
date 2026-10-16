@@ -15,7 +15,7 @@ body.admin { background: var(--bg); }
   place-items: center;
   padding: 24px 18px;
   background:
-    radial-gradient(90% 60% at 50% 0%, rgba(200, 240, 49, 0.22), transparent 60%),
+    radial-gradient(90% 60% at 50% 0%, rgba(245, 179, 36, 0.22), transparent 60%),
     var(--bg);
 }
 
@@ -63,7 +63,7 @@ body.admin { background: var(--bg); }
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(242, 242, 238, 0.92);
+  background: rgba(246, 244, 239, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -245,7 +245,7 @@ textarea.inp { min-height: 110px; resize: vertical; line-height: 1.55; }
   cursor: pointer;
   transition: all 0.18s var(--ease);
 }
-.dropzone:hover, .dropzone.is-over { border-color: var(--brand); color: var(--txt-2); background: rgba(43, 80, 255, 0.07); }
+.dropzone:hover, .dropzone.is-over { border-color: var(--brand); color: var(--txt-2); background: rgba(242, 168, 29, 0.1); }
 .dropzone svg { width: 26px; height: 26px; margin-bottom: 8px; color: var(--txt-3); }
 .dropzone b { color: var(--txt); display: block; font-size: 14px; margin-bottom: 3px; }
 
@@ -264,7 +264,7 @@ textarea.inp { min-height: 110px; resize: vertical; line-height: 1.55; }
   top: 4px; right: 4px;
   width: 22px; height: 22px;
   border-radius: 50%;
-  background: rgba(20, 22, 20, 0.6);
+  background: rgba(20, 20, 20, 0.6);
   display: grid;
   place-items: center;
   color: #fff;
@@ -273,7 +273,7 @@ textarea.inp { min-height: 110px; resize: vertical; line-height: 1.55; }
 .foto__cap {
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  background: rgba(20, 22, 20, 0.68);
+  background: rgba(20, 20, 20, 0.68);
   font-size: 9.5px;
   text-align: center;
   padding: 2px;
@@ -349,8 +349,8 @@ textarea.inp { min-height: 110px; resize: vertical; line-height: 1.55; }
   color: var(--txt-2);
 }
 .pill--on { background: rgba(47, 107, 79, 0.14); color: #2f6b4f; }
-.pill--off { background: rgba(20, 22, 20, 0.08); color: var(--txt-3); }
-.pill--dest { background: rgba(212, 56, 15, 0.12); color: var(--accent); }
+.pill--off { background: rgba(20, 20, 20, 0.08); color: var(--txt-3); }
+.pill--dest { background: rgba(194, 94, 0, 0.12); color: var(--accent); }
 
 /* ---------- modal ---------- */
 
@@ -361,7 +361,7 @@ textarea.inp { min-height: 110px; resize: vertical; line-height: 1.55; }
   display: none;
   align-items: flex-end;
   justify-content: center;
-  background: rgba(20, 22, 20, 0.6);
+  background: rgba(20, 20, 20, 0.6);
   backdrop-filter: blur(3px);
 }
 .modal.is-on { display: flex; }

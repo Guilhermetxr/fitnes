@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400"><rect width="640" height="400" fill="#141614"/><circle cx="520" cy="80" r="150" fill="#c8f031" opacity=".14"/><g transform="translate(68 92) scale(2.2)"><path d="M14 18h10l8 20 8-20h10L37 48h-10Z" fill="#c8f031"/><path d="M44 18h6l-3 8h-6Z" fill="#fff"/></g><text x="214" y="200" font-family="Barlow Condensed, Impact, Arial Narrow, sans-serif" font-weight="800" font-style="italic" font-size="132" fill="#fff" letter-spacing="-2">VIBE</text><text x="216" y="270" font-family="Barlow Condensed, Impact, Arial Narrow, sans-serif" font-weight="700" font-size="54" fill="#c8f031" letter-spacing="18">FIT WEAR</text><rect x="68" y="318" width="504" height="6" fill="#c8f031"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380">
+<defs><linearGradient id="ouro" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#ffe08a"/><stop offset=".45" stop-color="#f5b324"/><stop offset="1" stop-color="#b8740a"/></linearGradient></defs>
+<line x1="156.6" y1="101.1" x2="127.6" y2="87.6" stroke="#141414" stroke-width="26.0" stroke-linecap="round"/>
+<line x1="156.6" y1="101.1" x2="127.6" y2="87.6" stroke="#fff6e0" stroke-width="14.0" stroke-linecap="round"/>
+<line x1="191.2" y1="62.0" x2="174.3" y2="34.8" stroke="#141414" stroke-width="26.0" stroke-linecap="round"/>
+<line x1="191.2" y1="62.0" x2="174.3" y2="34.8" stroke="#fff6e0" stroke-width="14.0" stroke-linecap="round"/>
+<line x1="240.0" y1="48.0" x2="240.0" y2="16.0" stroke="#141414" stroke-width="26.0" stroke-linecap="round"/>
+<line x1="240.0" y1="48.0" x2="240.0" y2="16.0" stroke="#fff6e0" stroke-width="14.0" stroke-linecap="round"/>
+<line x1="288.8" y1="62.0" x2="305.7" y2="34.8" stroke="#141414" stroke-width="26.0" stroke-linecap="round"/>
+<line x1="288.8" y1="62.0" x2="305.7" y2="34.8" stroke="#fff6e0" stroke-width="14.0" stroke-linecap="round"/>
+<line x1="323.4" y1="101.1" x2="352.4" y2="87.6" stroke="#141414" stroke-width="26.0" stroke-linecap="round"/>
+<line x1="323.4" y1="101.1" x2="352.4" y2="87.6" stroke="#fff6e0" stroke-width="14.0" stroke-linecap="round"/>
+<path d="M136.0 140.0 Q240.0 22.0 344.0 140.0 L318.0 140.0 Q240.0 62.0 162.0 140.0 Z" fill="url(#ouro)" stroke="#141414" stroke-width="7.0" stroke-linejoin="round"/>
+<path d="M178.0 140.0 Q240.0 82.0 302.0 140.0 Q240.0 166.0 178.0 140.0 Z" fill="url(#ouro)" stroke="#141414" stroke-width="7.0" stroke-linejoin="round"/>
+<circle cx="240.0" cy="130.0" r="13.0" fill="#141414"/>
+<g fill="url(#ouro)" stroke="#141414" stroke-width="12.0" stroke-linejoin="round" paint-order="stroke"><path transform="translate(44.0 168) scale(1.0)" d="M0 0h34v120H0Z" fill-rule="evenodd"/><path transform="translate(90.0 168) scale(1.0)" d="M0 0h34v86h58v34H0Z" fill-rule="evenodd"/><path transform="translate(194.0 168) scale(1.0)" d="M0 0h34v43h42V0h34v120H76V77H34v43H0Z" fill-rule="evenodd"/><path transform="translate(316.0 168) scale(1.0)" d="M38 0h44l40 120H86l-7-22H43l-7 22H0ZM47 78h28L61 32Z" fill-rule="evenodd"/></g>
+<rect x="-150" y="-28" width="300" height="56" rx="6" fill="#141414" transform="translate(240 328) skewX(-8)"/>
+<text x="240" y="342" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, Liberation Sans, sans-serif" font-weight="900" font-size="38" letter-spacing="5" fill="#ffffff">IMPORTS</text>
+</svg>

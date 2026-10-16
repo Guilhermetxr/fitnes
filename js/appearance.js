@@ -1,10 +1,10 @@
 /* Aparência compartilhada pela vitrine e pela prévia do painel. */
 export const CORES = {
-  brand: ["Cor principal", "#2b50ff"],
-  accent: ["Destaques", "#d4380f"],
-  bg: ["Fundo", "#f2f2ee"],
+  brand: ["Cor principal", "#f2a81d"],
+  accent: ["Destaques", "#c25e00"],
+  bg: ["Fundo", "#f6f4ef"],
   surface: ["Cards e menus", "#ffffff"],
-  txt: ["Textos", "#141614"],
+  txt: ["Textos", "#141414"],
 };
 export function coresValidas(cores = {}) {
   return Object.fromEntries(Object.entries(CORES).map(([chave, [, padrao]]) =>
@@ -14,7 +14,7 @@ export function aplicarCores(cores, alvo = document.documentElement) {
   const c = coresValidas(cores);
   for (const [chave, valor] of Object.entries(c)) alvo.style.setProperty(`--${chave}`, valor);
   for (const [chave, valor] of Object.entries({
-    "brand-2": c.brand, "bg-2": c.bg, "surface-2": c.surface,
+    "brand-2": `color-mix(in srgb, ${c.brand} 62%, #000)`, "bg-2": c.bg, "surface-2": c.surface,
     "txt-2": c.txt, "txt-3": c.txt,
     "line": `${c.txt}29`, "line-2": `${c.txt}4d`,
   })) alvo.style.setProperty(`--${chave}`, valor);

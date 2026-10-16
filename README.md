@@ -1,6 +1,6 @@
-# Catálogo de Moda — Vibe Fit
+# Catálogo de Moda — Ilha Imports
 
-Catálogo digital para a Vibe Fit, loja de moda fitness feminina e masculina
+Catálogo digital para a Ilha Imports, loja de moda fitness feminina e masculina
 (leggings, tops, conjuntos, shorts, camisetas, regatas e bermudas). O cliente navega por seções,
 abre o produto e finaliza o pedido **no WhatsApp** — não há carrinho nem checkout.
 A dona da loja cadastra e edita tudo por um painel próprio, sem mexer em código.
@@ -44,7 +44,7 @@ Depois acesse `http://localhost:5580`.
 
 Enquanto o `js/config.js` não for preenchido, o site roda em **modo demonstração**:
 os dados ficam no `localStorage` do próprio navegador e já vêm produtos de exemplo.
-A senha do painel nesse modo é a que está em `DEMO_SENHA` (padrão: `vibefit123`).
+A senha do painel nesse modo é a que está em `DEMO_SENHA` (padrão: `ilha123`).
 
 ---
 

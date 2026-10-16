@@ -18,7 +18,7 @@ import {
 import { CATEGORIAS_DEMO, PRODUTOS_DEMO } from "./demo-data.js";
 
 const CDN = `https://www.gstatic.com/firebasejs/${FIREBASE_VERSION}`;
-const CHAVE_LOCAL = "catalogo_vibefit_v1";
+const CHAVE_LOCAL = "catalogo_ilha_v1";
 
 /** true quando js/config.js ainda tem os placeholders. */
 export const MODO_DEMO = Object.values(firebaseConfig).some(

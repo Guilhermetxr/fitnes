@@ -1,31 +1,31 @@
 /* ============================================================
    CATÁLOGO — estilos da loja
-   Identidade Vibe Fit: off-white frio, preto grafite, azul elétrico
-   como ação, coral nos destaques e verde "volt" como assinatura.
+   Identidade Ilha Imports (do Instagram @ilhaimports8): preto do logo,
+   dourado das letras "ILHA" como ação e assinatura, laranja nos destaques.
    Mobile-first: tudo é desenhado para o celular e cresce daí.
    ============================================================ */
 
 :root {
-  /* superfícies (off-white frio, "piso de academia") */
-  --bg: #f2f2ee;
-  --bg-2: #e7e8e2;
+  /* superfícies (off-white levemente quente) */
+  --bg: #f6f4ef;
+  --bg-2: #ece8df;
   --surface: #ffffff;
-  --surface-2: #e9eae4;
-  --line: rgba(20, 22, 20, 0.12);
-  --line-2: rgba(20, 22, 20, 0.26);
+  --surface-2: #efebe2;
+  --line: rgba(20, 20, 20, 0.12);
+  --line-2: rgba(20, 20, 20, 0.26);
 
   /* texto (grafite) */
-  --txt: #141614;
-  --txt-2: #4a4d52;
-  --txt-3: #62666b;
+  --txt: #141414;
+  --txt-2: #4a4846;
+  --txt-3: #64615c;
 
   /* marca */
-  --brand: #2b50ff;       /* azul elétrico — ação principal */
-  --brand-2: #1a37d6;     /* hover */
-  --brand-ink: #ffffff;   /* texto sobre --brand */
-  --accent: #d4380f;      /* coral — selos de % OFF e destaques */
-  --volt: #c8f031;        /* verde volt — assinatura (sempre sobre fundo escuro) */
-  --ink: #141614;         /* preto da marca (faixa de avisos, hero) */
+  --brand: #f2a81d;       /* dourado do logo — botões (texto preto por cima) */
+  --brand-2: #946000;     /* dourado escuro — preços e links sobre fundo claro */
+  --brand-ink: #141414;   /* texto sobre --brand */
+  --accent: #c25e00;      /* laranja dos destaques — selo de % OFF */
+  --ouro: #f5b324;        /* dourado vivo — assinatura (sempre sobre fundo escuro) */
+  --ink: #141414;         /* preto do logo (faixa de avisos, hero) */
   --wa: #25d366;
 
   /* tipografia */
@@ -41,7 +41,7 @@
   --pad: 16px;
   --maxw: 1240px;
 
-  --shadow: 0 10px 30px rgba(20, 22, 20, 0.14);
+  --shadow: 0 10px 30px rgba(20, 20, 20, 0.14);
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -82,8 +82,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* ---------- scrollbar discreta ---------- */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: #c9cbc4; border-radius: 20px; border: 3px solid var(--bg); }
-::-webkit-scrollbar-thumb:hover { background: #9fa29a; }
+::-webkit-scrollbar-thumb { background: #d6cfc0; border-radius: 20px; border: 3px solid var(--bg); }
+::-webkit-scrollbar-thumb:hover { background: #a89e88; }
 
 /* ============================================================
    TOPO — faixa de avisos + header
@@ -114,13 +114,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 .topbar__track span::before {
-  content: "\25B2";
+  content: "\2600";
   display: inline-block;
   margin-right: 14px;
   vertical-align: middle;
   font-size: 8px;
-  color: var(--volt);
-  transform: rotate(90deg);
+  color: var(--ouro);
 }
 
 @keyframes marquee {
@@ -196,7 +195,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 .scrim {
   position: fixed; inset: 0;
-  background: rgba(20, 22, 20, 0.5);
+  background: rgba(20, 20, 20, 0.5);
   backdrop-filter: blur(2px);
   z-index: 80;
   opacity: 0;
@@ -330,7 +329,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .btn svg { width: 18px; height: 18px; flex: none; }
 
 .btn--brand { background: var(--brand); color: var(--brand-ink); }
-.btn--brand:hover { background: var(--brand-2); }
+.btn--brand:hover { filter: brightness(1.08); box-shadow: 0 6px 18px rgba(242, 168, 29, 0.35); }
 
 .btn--wa { background: var(--wa); color: #06301a; }
 .btn--wa:hover { filter: brightness(1.08); }
@@ -350,8 +349,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   padding: 44px 0 34px;
   border-bottom: 1px solid var(--line);
   background:
-    radial-gradient(90% 90% at 100% 0%, rgba(200, 240, 49, 0.2), transparent 62%),
-    radial-gradient(70% 70% at 0% 100%, rgba(43, 80, 255, 0.12), transparent 62%),
+    radial-gradient(90% 90% at 100% 0%, rgba(245, 179, 36, 0.24), transparent 62%),
+    radial-gradient(70% 70% at 0% 100%, rgba(194, 94, 0, 0.12), transparent 62%),
     var(--bg);
   overflow: hidden;
 }
@@ -388,7 +387,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink);
-  background: var(--volt);
+  background: var(--ouro);
   padding: 7px 12px 6px;
   margin-bottom: 16px;
   transform: skewX(-8deg);
@@ -458,7 +457,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   overflow: hidden;
   background: var(--ink);
   border: 0;
-  box-shadow: 0 0 0 2px var(--ink), 0 0 0 5px var(--bg), 0 0 0 7px var(--volt);
+  box-shadow: 0 0 0 2px var(--ink), 0 0 0 5px var(--bg), 0 0 0 7px var(--ouro);
 }
 .story__ring--img img { width: 100%; height: 100%; object-fit: cover; }
 .story__label {
@@ -635,7 +634,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   letter-spacing: 0.06em;
   padding: 5px 10px 5px 8px;
   border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(20, 22, 20, 0.25);
+  box-shadow: 0 4px 12px rgba(20, 20, 20, 0.25);
 }
 .card__off svg { width: 12px; height: 12px; }
 
@@ -1017,7 +1016,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   place-items: center;
   background: var(--wa);
   color: #06301a;
-  box-shadow: 0 8px 26px rgba(37, 211, 102, 0.32), 0 2px 8px rgba(20, 22, 20, 0.25);
+  box-shadow: 0 8px 26px rgba(37, 211, 102, 0.32), 0 2px 8px rgba(20, 20, 20, 0.25);
   transition: transform 0.2s var(--ease);
 }
 .wafab:hover { transform: scale(1.07); }
@@ -1057,9 +1056,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* aviso de configuração pendente (modo demonstração) */
 .demobar {
-  background: #f3f9d9;
-  border-bottom: 1px solid #d6e79a;
-  color: #3d4a0c;
+  background: #fdf1d6;
+  border-bottom: 1px solid #f0d394;
+  color: #5c3d00;
   font-size: 12.5px;
   padding: 9px var(--pad);
   text-align: center;
@@ -1150,7 +1149,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .hero__copy { min-width: 0; max-width: 600px; }
 .hero p { color: #fff; }
-.hero h1 em { color: var(--volt); }
+.hero h1 em { color: var(--ouro); }
 .hero p { text-shadow: 0 1px 8px rgba(0, 0, 0, .35); }
 .hero .btn--ghost { color: #fff; border-color: rgba(255, 255, 255, .65); background: rgba(0, 0, 0, .2); }
 .hero .btn--ghost:hover { background: rgba(0, 0, 0, .45); }

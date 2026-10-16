@@ -147,7 +147,7 @@ export function revelar(raiz = document) {
 export async function montarLayout({ ativo = "" } = {}) {
   const [cfg, cats] = await Promise.all([config(), dados.categorias()]);
   if (cfg.cores) aplicarCores(cfg.cores);
-  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", cfg.cores?.bg || "#f2f2ee");
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", cfg.cores?.bg || "#141414");
   const categorias = cats.filter((c) => c.ativa !== false);
   const wa = linkWhats(cfg);
 
@@ -295,8 +295,8 @@ function ligarInteracoes() {
 
 export const perks = `
   <div class="perks">
-    <div class="perk">${ico.caminhao}<b>Entregas</b><span>Prazo e frete combinados no zap</span></div>
+    <div class="perk">${ico.caminhao}<b>Entrega em até 1h</b><span>Em São Luís — combine pelo zap</span></div>
     <div class="perk">${ico.pix}<b>Pagamento facilitado</b><span>Pix e cartão no atendimento</span></div>
-    <div class="perk">${ico.medalha}<b>Tecido de alta performance</b><span>Não fica transparente no agachamento</span></div>
+    <div class="perk">${ico.medalha}<b>As melhores marcas</b><span>Peças selecionadas pra treinar</span></div>
     <div class="perk">${ico.escudo}<b>Atendimento humano</b><span>Tire dúvidas de numeração no zap</span></div>
   </div>`;

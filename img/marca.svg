@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#141614"/><path d="M14 18h10l8 20 8-20h10L37 48h-10Z" fill="#c8f031"/><path d="M44 18h6l-3 8h-6Z" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<defs><linearGradient id="ouro" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#ffe08a"/><stop offset=".45" stop-color="#f5b324"/><stop offset="1" stop-color="#b8740a"/></linearGradient></defs>
+<rect width="64" height="64" rx="14" fill="#141414"/>
+<g transform="translate(0 0)"><line x1="9.5" y1="36.5" x2="1.7" y2="32.9" stroke="#141414" stroke-width="7.0" stroke-linecap="round"/>
+<line x1="9.5" y1="36.5" x2="1.7" y2="32.9" stroke="#fff6e0" stroke-width="3.8" stroke-linecap="round"/>
+<line x1="18.8" y1="25.9" x2="14.3" y2="18.6" stroke="#141414" stroke-width="7.0" stroke-linecap="round"/>
+<line x1="18.8" y1="25.9" x2="14.3" y2="18.6" stroke="#fff6e0" stroke-width="3.8" stroke-linecap="round"/>
+<line x1="32.0" y1="22.2" x2="32.0" y2="13.5" stroke="#141414" stroke-width="7.0" stroke-linecap="round"/>
+<line x1="32.0" y1="22.2" x2="32.0" y2="13.5" stroke="#fff6e0" stroke-width="3.8" stroke-linecap="round"/>
+<line x1="45.2" y1="25.9" x2="49.7" y2="18.6" stroke="#141414" stroke-width="7.0" stroke-linecap="round"/>
+<line x1="45.2" y1="25.9" x2="49.7" y2="18.6" stroke="#fff6e0" stroke-width="3.8" stroke-linecap="round"/>
+<line x1="54.5" y1="36.5" x2="62.3" y2="32.9" stroke="#141414" stroke-width="7.0" stroke-linecap="round"/>
+<line x1="54.5" y1="36.5" x2="62.3" y2="32.9" stroke="#fff6e0" stroke-width="3.8" stroke-linecap="round"/>
+<path d="M3.9 47.0 Q32.0 15.1 60.1 47.0 L53.1 47.0 Q32.0 25.9 10.9 47.0 Z" fill="url(#ouro)" stroke="#141414" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M15.3 47.0 Q32.0 31.3 48.7 47.0 Q32.0 54.0 15.3 47.0 Z" fill="url(#ouro)" stroke="#141414" stroke-width="1.9" stroke-linejoin="round"/>
+<circle cx="32.0" cy="44.3" r="3.5" fill="#141414"/></g>
+</svg>
